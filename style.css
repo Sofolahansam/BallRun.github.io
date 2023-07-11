@@ -1,0 +1,69 @@
+*{
+padding: 0;
+margin: .5px;
+background-color: black;
+}
+
+#game{
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  background-image: url("https://thumbs.gfycat.com/TanHarmfulBluewhale-size_restricted.gif");
+}
+
+#character{
+  width: 35px;
+  height: 35px;
+  background-color: rgb(16, 191, 255);
+  position: absolute;
+  border-radius: 50%;
+  top: 96px;
+  left:4px;}
+ 
+  .animate{
+  animation: jump 500ms;
+
+}
+  
+
+#block{
+  width: 30px;
+  height: 60px;
+  background-color: rgb(255, 0, 0);
+position: relative;
+top: -40px;
+left: 36.7%;
+animation: block 1s infinite linear;
+}
+
+#block{
+  width: 30px;
+  height: 40px;
+  background-image: linear-gradient(red,);
+position: relative;
+top: -40px;
+left: 36.7%;
+animation: block 1s infinite linear;
+}
+
+
+@keyframes block{
+  0%{left: 480px;}
+  100%{left: -40px;}
+}
+
+
+@keyframes jump{
+  0%{top: 150px;}
+ 30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+
+.title{
+  font-weight: bolder;
+  font-size: 600%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+
+}
